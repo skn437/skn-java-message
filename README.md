@@ -1,12 +1,12 @@
 # SKN Java Message Library
 
-[![Maven Central](https://img.shields.io/maven-central/v/best.skn/skn-java-color)](https://central.sonatype.com/artifact/best.skn/skn-java-color) [![Javadoc](https://javadoc.io/badge2/best.skn/skn-java-color/1.1.0/javadoc.svg)](https://javadoc.io/doc/best.skn/skn-java-color/1.1.0) [![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Maven Central](https://img.shields.io/maven-central/v/best.skn/skn-java-message)](https://central.sonatype.com/artifact/best.skn/skn-java-message) [![Javadoc](https://javadoc.io/badge2/best.skn/skn-java-message/javadoc.svg)](https://javadoc.io/doc/best.skn/skn-java-message) [![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 &nbsp;
 
 ## **_JavaDocs:_**
 
-### Read the Javadoc for the main API: [Message API](https://javadoc.io/doc/best.skn/skn-java-color/latest/best/skn/utils/color/Color.html)
+### Read the Javadoc for the main API: [Message API](https://javadoc.io/doc/best.skn/skn-java-message/latest/best/skn/utils/message/Message.html)
 
 &nbsp;
 
@@ -75,7 +75,7 @@
 > import best.skn.utils.message.Message;
 > ```
 
-### For instructions for `Gradle` & others: Visit [Maven Central](https://central.sonatype.com/artifact/best.skn/skn-java-color)
+### For instructions for `Gradle` & others: Visit [Maven Central](https://central.sonatype.com/artifact/best.skn/skn-java-message)
 
 &nbsp;
 
