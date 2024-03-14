@@ -1,15 +1,16 @@
 package best.skn;
 
+//? Java::Source
 import best.skn.utils.message.Message;
 
 /**
  * Main Class
  *
  * @author SKN
- * @version 1.0.0
+ * @version 1.0.1
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
- * @dedicated.to Trina, Logno and Atoshi
+ * @dedicated.to Trina, Logno, Atoshi and My Parents
  */
 public class Main {
 
