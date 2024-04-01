@@ -8,10 +8,10 @@ import reactor.core.publisher.Mono;
  * Message Class as main API
  *
  * @author SKN
- * @version 1.0.1
+ * @version 1.0.2
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
- * @dedicated.to Trina, Logno, Atoshi and My Parents
+ * @dedicated.to Logno, Atoshi and My Parents
  */
 public class Message {
 
