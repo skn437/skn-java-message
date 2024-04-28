@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
  * Message Class as main API
  *
  * @author SKN
- * @version 1.0.2
+ * @version 1.1.0
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
  * @dedicated.to Logno, Atoshi and My Parents
@@ -23,7 +23,31 @@ public class Message {
    * @since v1.0.0
    */
   public static String infoConsole(String message) {
-    return String.format("%s 📚 \n", Color.blue(message));
+    return String.format("%s 📚 \n", Color.blueBold(message));
+  }
+
+  /**
+   * Outputs info message as server response on API request success/failure
+   *
+   * @param message a String containing the actual info message
+   * @return a String containing formatted info message
+   * @since v1.1.0
+   */
+  public static String infoServer(String message) {
+    return String.format("Info: %s 📚 \n", message);
+  }
+
+  /**
+   * Outputs info message as server mono response on API request success/failure
+   *
+   * @param message a String containing the actual info message
+   * @return a Mono of String containing formatted info message
+   * @since v1.1.0
+   */
+  public static Mono<String> infoMono(String message) {
+    Mono<String> infoMessage = Mono.just(infoServer(message)).log();
+
+    return infoMessage;
   }
 
   /**
@@ -34,7 +58,7 @@ public class Message {
    * @since v1.0.0
    */
   public static String successConsole(String message) {
-    return String.format("%s ✅ \n", Color.green(message));
+    return String.format("%s ✅ \n", Color.greenBold(message));
   }
 
   /**
@@ -69,7 +93,7 @@ public class Message {
    * @since v1.0.0
    */
   public static String errorConsole(String message) {
-    return String.format("%s ❌ \n", Color.red(message));
+    return String.format("%s ❌ \n", Color.redBold(message));
   }
 
   /**
@@ -96,5 +120,27 @@ public class Message {
     );
 
     return errorMessage;
+  }
+
+  /**
+   * Public static method to throw Unsupported Instantiation Error
+   *
+   * @throws UnsupportedOperationException
+   * @since v1.1.0
+   */
+  public static void ThrowInstantiationError()
+    throws UnsupportedOperationException {
+    throw new UnsupportedOperationException(
+      errorConsole("Class Instantiation is not supported!")
+    );
+  }
+
+  /**
+   * Private constructor to make the class non-instantiable
+   *
+   * @since v1.1.0
+   */
+  private Message() {
+    ThrowInstantiationError();
   }
 }
