@@ -9,12 +9,12 @@ class ApplicationTests {
 
   @Test
   void infoMessageOutput() {
-    System.out.println(Message.infoConsole("You are SKN!"));
+    System.out.print(Message.infoConsole("You are SKN!"));
   }
 
   @Test
   void successMessageOutput() {
-    System.out.println(
+    System.out.print(
       Message.successConsole(
         "SKN, you were able to learn three languages successfully!"
       )
@@ -23,7 +23,7 @@ class ApplicationTests {
 
   @Test
   void errorMessageOutput() {
-    System.out.println(
+    System.out.print(
       Message.errorConsole(("SKN, you failed to find the true happiness!"))
     );
   }
