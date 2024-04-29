@@ -1,8 +1,8 @@
 /**
  * Utility Package
  *
- * @author SKN
- * @version 1.1.0
+ * @author SKN Shukhan
+ * @version 1.1.1
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
  * @dedicated.to Logno, Atoshi and My Parents
