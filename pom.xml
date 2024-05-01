@@ -15,7 +15,7 @@
 
 	<groupId>best.skn</groupId>
 	<artifactId>skn-java-message</artifactId>
-	<version>1.1.1</version>
+	<version>1.1.2</version>
 
 	<name>SKN Java Message</name>
 	<description>A Simple Message Library For Java</description>

@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
  * Message Class as main API
  *
  * @author SKN Shukhan
- * @version 1.1.1
+ * @version 1.1.2
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
  * @dedicated.to Logno, Atoshi and My Parents
@@ -23,7 +23,7 @@ public class Message {
    * @since v1.0.0
    */
   public static String infoConsole(String message) {
-    return String.format("%s 📚 \n", Color.blueBold(message));
+    return String.format("%s 📚 \n", Color.blue(message));
   }
 
   /**
@@ -58,7 +58,7 @@ public class Message {
    * @since v1.0.0
    */
   public static String successConsole(String message) {
-    return String.format("%s ✅ \n", Color.greenBold(message));
+    return String.format("%s ✅ \n", Color.green(message));
   }
 
   /**
@@ -93,7 +93,7 @@ public class Message {
    * @since v1.0.0
    */
   public static String errorConsole(String message) {
-    return String.format("%s ❌ \n", Color.redBold(message));
+    return String.format("%s ❌ \n", Color.red(message));
   }
 
   /**
