@@ -86,7 +86,7 @@
 ## **_Dedicated To:_**
 
 - 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life.
-- 💯`My Father & Mother`: The greatest treasures of my life ever.
+- 💯`My Parents`: The greatest treasures of my life ever.
 
 &nbsp;
 
