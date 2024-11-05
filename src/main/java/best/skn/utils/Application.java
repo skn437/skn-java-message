@@ -1,6 +1,5 @@
 package best.skn.utils;
 
-//? Java::Library
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Application Class
  *
  * @author SKN Shukhan
- * @version 1.1.2
+ * @version 1.2.0
  * @since 2024-05-28
  * @use.case Java, Java Spring Boot
  * @dedicated.to Logno, Atoshi and My Parents

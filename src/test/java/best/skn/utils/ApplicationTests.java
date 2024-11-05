@@ -1,8 +1,6 @@
 package best.skn.utils;
 
-//? Java::Source
 import best.skn.utils.message.Message;
-//? Java::Library
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -16,17 +14,11 @@ class ApplicationTests {
 
   @Test
   void successMessageOutput() {
-    System.out.print(
-      Message.successConsole(
-        "SKN, you were able to learn three languages successfully!"
-      )
-    );
+    System.out.print(Message.successConsole("SKN, you were able to learn three languages successfully!"));
   }
 
   @Test
   void errorMessageOutput() {
-    System.out.print(
-      Message.errorConsole(("SKN, you failed to find the true happiness!"))
-    );
+    System.out.print(Message.errorConsole(("SKN, you failed to find the true happiness!")));
   }
 }

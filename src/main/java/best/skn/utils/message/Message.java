@@ -1,6 +1,5 @@
 package best.skn.utils.message;
 
-//? Java::Library
 import best.skn.utils.color.Color;
 import reactor.core.publisher.Mono;
 
@@ -8,7 +7,7 @@ import reactor.core.publisher.Mono;
  * Message Class as main API
  *
  * @author SKN Shukhan
- * @version 1.1.2
+ * @version 1.2.0
  * @since 2024-03-12
  * @use.case Java, Java Spring Boot
  * @dedicated.to Logno, Atoshi and My Parents
@@ -34,7 +33,7 @@ public class Message {
    * @since v1.1.0
    */
   public static String infoServer(String message) {
-    return String.format("Info: %s 📚 \n", message);
+    return String.format("Info: %s 📚", message);
   }
 
   /**
@@ -115,9 +114,7 @@ public class Message {
    * @since v1.0.0
    */
   public static Mono<String> errorMono(String message) {
-    Mono<String> errorMessage = Mono.error(
-      new RuntimeException(errorServer(message))
-    );
+    Mono<String> errorMessage = Mono.error(new RuntimeException(errorServer(message)));
 
     return errorMessage;
   }
@@ -128,11 +125,8 @@ public class Message {
    * @throws UnsupportedOperationException
    * @since v1.1.0
    */
-  public static void ThrowInstantiationError()
-    throws UnsupportedOperationException {
-    throw new UnsupportedOperationException(
-      errorConsole("Class Instantiation is not supported!")
-    );
+  public static void throwInstantiationError() throws UnsupportedOperationException {
+    throw new UnsupportedOperationException(errorConsole("Class Instantiation is not supported!"));
   }
 
   /**
@@ -141,6 +135,6 @@ public class Message {
    * @since v1.1.0
    */
   private Message() {
-    ThrowInstantiationError();
+    throwInstantiationError();
   }
 }
