@@ -4,7 +4,7 @@
 
 > Java
 
-[![Maven Central](https://img.shields.io/maven-central/v/best.skn/skn-java-message)](https://central.sonatype.com/artifact/best.skn/skn-java-message) [![Javadoc](https://javadoc.io/badge2/best.skn/skn-java-message/1.1.2/javadoc.svg)](https://javadoc.io/doc/best.skn/skn-java-message/1.1.2) [![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Maven Central](https://img.shields.io/maven-central/v/best.skn/skn-java-message)](https://central.sonatype.com/artifact/best.skn/skn-java-message) [![Javadoc](https://javadoc.io/badge2/best.skn/skn-java-message/1.2.0/javadoc.svg)](https://javadoc.io/doc/best.skn/skn-java-message/1.2.0) [![Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 &nbsp;
 
@@ -29,15 +29,18 @@
 ### **`Message` Class:**
 
 - It doesn't need to be instantiated
-- It has 7 static methods
+- It has 10 static methods
 - The notification modes are:
-  - Info message on console
-  - Success message on console
+  - Info message on console (It has new line character at the end)
+  - Info message as server response
+  - Info message as server mono response (Reactive)
+  - Success message on console (It has new line character at the end)
   - Success message as server response
   - Success message as server mono response (Reactive)
-  - Error message on console
+  - Error message on console (It has new line character at the end)
   - Error message as server response
   - Error message as server mono response (Reactive)
+  - Instantiation Error message (Shows Java Unsupported Operation Exception)
 
 &nbsp;
 
@@ -51,7 +54,6 @@
 ## **_Requirements:_**
 
 - 💀 Minimum Java Version: `21`
-- 💀 Minimum Maven Version: `3.9.6`
 
 &nbsp;
 
@@ -63,14 +65,14 @@
 > <dependency>
 >  <groupId>best.skn</groupId>
 >  <artifactId>skn-java-message</artifactId>
->  <version>1.1.2</version>
+>  <version>1.2.0</version>
 > </dependency>
 > ```
 
-### Write the following in the terminal
+### For `Gradle`, inside `dependencies` block of `build.gradle.kts`, copy the following
 
-> ```zsh
-> mvn install
+> ```kotlin
+> implementation("best.skn:skn-java-message:1.2.0")
 > ```
 
 ### Inside your Java Code, import the package like this
@@ -79,13 +81,31 @@
 > import best.skn.utils.message.Message;
 > ```
 
-### For instructions for `Gradle` & others: Visit [Maven Central](https://central.sonatype.com/artifact/best.skn/skn-java-message)
+### Use the package like this for normal cases
+
+> ```java
+> public class Cat {
+>   public Cat() {
+>     System.out.print(Message.infoConsole("Cat Class Instantiated!"));
+>   }
+> }
+> ```
+
+### Use the package like this for `UnsupportedOperationException`
+
+> ```java
+> public class Person {
+>   private Person() {
+>     Message.throwInstantiationError();
+>   }
+> }
+> ```
 
 &nbsp;
 
 ## **_Dedicated To:_**
 
-- 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life.
+- 👩‍🎨`Prodipta Das Logno` & 🧛‍♀️`Atoshi Sarker Prithula`: The two most special ladies of my life. My best wishes will always be with you two. May you two always be happy.
 - 💯`My Parents`: The greatest treasures of my life ever.
 
 &nbsp;
